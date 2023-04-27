@@ -15,10 +15,10 @@ class Linkedlist3 {
   insert(val) {
     let node3 = new Node3(val);
     if (!this.head) {
-     this.head = node3;
-     this.tail = this.head
+      this.head = node3;
+      this.tail = this.head;
     } else {
-        this.tail.next = node3;
+      this.tail.next = node3;
       this.tail = node3;
     }
     this.length++;
@@ -35,10 +35,9 @@ class Linkedlist3 {
       while (currentTl.next) {
         this.tail = newTail;
         this.tail.next = null;
-
-        this.length--;
-        return currentTl;
       }
+      this.length--;
+      return currentTl;
     }
   }
 }
@@ -56,4 +55,3 @@ console.log(linkedlist3.length);
 linkedlist3.remove();
 console.log("");
 console.log(linkedlist3.length);
-
