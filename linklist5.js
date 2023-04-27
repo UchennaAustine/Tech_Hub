@@ -34,7 +34,7 @@ class Linkedlist5 {
         let newTail = currentTl2
 
         while (currentTl2.next) {
-            this.tail= currentTl2
+            this.tail= newTail
             this.tail.next= null
         }
 
