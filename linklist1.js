@@ -40,8 +40,6 @@ class Linklist {
   }
   remove() {
     if (!this.head) {
-      3;
-
       return undefined;
     } else {
       let current = this.tail;
